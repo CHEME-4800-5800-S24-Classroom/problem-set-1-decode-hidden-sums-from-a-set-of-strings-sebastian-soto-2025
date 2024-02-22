@@ -8,8 +8,14 @@
 
 function build(record::String)::MyPuzzleRecordModel
     model = MyPuzzleRecordModel()
+
+    #Collects all the characters in record and turns them into an array
     model.characters = collect(record)
+
+    #assigns the length of the model to equal the length of the record
     model.len = length(record)
+
+    #sets the record of the model to equal record
     model.record = record
     return model
 end

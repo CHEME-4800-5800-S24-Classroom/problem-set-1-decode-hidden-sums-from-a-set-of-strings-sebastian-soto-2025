@@ -11,5 +11,6 @@ mutable struct MyPuzzleRecordModel
     characters::Array{Char, 1}
     len::Int64
 
+    #Initialize it 
     MyPuzzleRecordModel() = new();
 end
